@@ -1,101 +1,203 @@
-# Angular 🚀
+ Angular 🚀
 
-Welcome to my **Angular Learning & Projects Repository**! 
+A collection of my **Angular fundamentals, tutorials, practice examples, and projects** as I learn and explore Angular step by step.
 
-This repository is a collection of my Angular learning journey, including fundamental concepts, tutorials, practical examples, and projects built while learning and practicing Angular.
+This repository is my learning space, where I practice concepts, experiment with code, and build projects — from the basics to more advanced topics. If you're learning Angular too, feel free to explore and learn along with me!
 
-My goal is to strengthen my understanding of Angular, practice real-world development, and keep all my learning resources and projects organized in one place.
+---
 
-## 📚 What's Inside?
+## 📑 Table of Contents
 
-- **Angular Fundamentals** — Components, templates, data binding, directives, pipes, and services.
-- **Routing & Navigation** — Route configuration, route parameters, and navigation between components.
-- **Forms** — Template-driven forms and reactive forms with validation.
-- **Dependency Injection** — Services and dependency injection concepts.
-- **HTTP & APIs** — Making HTTP requests and working with REST APIs.
-- **Angular Projects** — Hands-on projects to apply concepts and improve development skills.
-- **Tutorials & Examples** — Step-by-step tutorials, code examples, and practice exercises.
+- [About](#-about)
+- [Official Resources](#-official-resources)
+- [Getting Started](#-getting-started)
+- [Clone This Repository](#-clone-this-repository)
+- [Angular Learning Roadmap](#-angular-learning-roadmap)
+- [Useful Angular CLI Commands](#-useful-angular-cli-commands)
+- [Goals](#-goals)
 
-## 🛠️ Technologies Used
+---
 
-- Angular
-- TypeScript
-- HTML5
-- CSS3
-- JavaScript
-- Node.js & npm
-- Angular CLI
+## 📚 About
 
-## 🚀 Getting Started
+In this repository, you'll find:
+
+- 📖 **Fundamentals** — Core Angular concepts and explanations.
+- 💻 **Practice Examples** — Code examples to understand concepts in practice.
+- 🧩 **Tutorials** — Step-by-step learning exercises.
+- 🚀 **Projects** — Applications built while learning Angular.
+- 📝 **Learning Notes** — Useful commands, tips, and references.
+
+## 🔗 Official Resources
+
+Learn from the official Angular documentation and use it as your primary reference.
+
+| Resource | Description |
+|---|---|
+| [Angular Documentation](https://angular.dev/) | Official guides and concepts |
+| [Angular Tutorials](https://angular.dev/tutorials) | Interactive tutorials and learning resources |
+| [Angular CLI](https://angular.dev/tools/cli) | CLI commands and project tools |
+| [Angular API Reference](https://angular.dev/api) | Classes, functions, and APIs |
+| [Node.js](https://nodejs.org/) | JavaScript runtime required for Angular tooling |
+| [TypeScript](https://www.typescriptlang.org/docs/) | TypeScript documentation |
+
+## 🛠️ Getting Started
 
 ### Prerequisites
 
-Make sure you have the following installed:
+Before working with Angular, install:
 
-- [Node.js](https://nodejs.org/)
-- [Angular CLI](https://angular.dev/tools/cli)
-- A code editor such as [Visual Studio Code](https://code.visualstudio.com/)
+- [Node.js](https://nodejs.org/) — includes npm.
+- [Visual Studio Code](https://code.visualstudio.com/) — recommended editor.
+- Git — to clone repositories and manage code.
 
-### Clone This Repository
+Verify your installation:
+
+```bash
+node -v
+npm -v
+git --version
+```
+
+### 1. Install Angular CLI
+
+Angular CLI provides commands to create, develop, test, and build Angular applications.
+
+```bash
+npm install -g @angular/cli
+```
+
+Verify the installation:
+
+```bash
+ng version
+```
+
+### 2. Create a New Angular Project
+
+```bash
+ng new my-angular-app
+```
+
+Follow the prompts to configure your application.
+
+### 3. Open the Project
+
+```bash
+cd my-angular-app
+```
+
+### 4. Start the Development Server
+
+```bash
+ng serve --open
+```
+
+Your application will normally be available at:
+
+**http://localhost:4200/**
+
+The development server watches for code changes and refreshes the application as you work.
+
+## 📂 Clone This Repository
+
+Clone this repository to explore the tutorials, examples, and projects.
 
 ```bash
 git clone https://github.com/GitH05/angular.git
 cd angular
 ```
 
-### Run a Project
-
-Navigate to the specific Angular project directory:
+Open it in Visual Studio Code:
 
 ```bash
-cd project-folder
-npm install
-ng serve
+code .
 ```
 
-Open your browser and visit `http://localhost:4200/`.
+**Note:** This repository may contain multiple Angular applications. To run one, navigate to its directory containing `package.json`, install its dependencies with `npm install` if necessary, and start it with `ng serve`.
 
-*Note: Run these commands inside the relevant project folder that contains its `package.json` file.*
+## 🗺️ Angular Learning Roadmap
 
-## 📂 Repository Structure
+The following roadmap covers the journey from the prerequisites to building and deploying Angular applications.
 
-```text
-angular/
-├── fundamentals/
-│   ├── components/
-│   ├── data-binding/
-│   ├── directives/
-│   ├── pipes/
-│   └── services/
-├── tutorials/
-├── projects/
-└── README.md
-```
+### 🟢 Stage 1 — Prerequisites
 
-*The directory structure may evolve as more tutorials, examples, and projects are added.*
+- [ ] HTML and CSS fundamentals
+- [ ] JavaScript fundamentals
+- [ ] TypeScript basics
+- [ ] Git, command line, and npm basics
+
+### 🟢 Stage 2 — Angular Fundamentals
+
+- [ ] Introduction to Angular and Angular CLI
+- [ ] Project creation and folder structure
+- [ ] Components and templates
+- [ ] Interpolation and data binding
+- [ ] Event handling
+- [ ] Directives and pipes
+- [ ] Component lifecycle hooks
+
+### 🟡 Stage 3 — Application Development
+
+- [ ] Services and dependency injection
+- [ ] Component communication
+- [ ] Routing and navigation
+- [ ] Template-driven forms
+- [ ] Reactive forms and validation
+- [ ] HTTP requests and REST APIs
+- [ ] Observables and RxJS
+- [ ] Signals and reactive state
+
+### 🟠 Stage 4 — Advanced Concepts
+
+- [ ] Route guards and resolvers
+- [ ] HTTP interceptors
+- [ ] Lazy loading
+- [ ] Change detection and performance
+- [ ] Reusable components and best practices
+- [ ] Error handling and security
+- [ ] Unit and component testing
+
+### 🔵 Stage 5 — Projects and Deployment
+
+- [ ] Build small practice applications
+- [ ] Create CRUD applications
+- [ ] Work with external APIs
+- [ ] Build a complete application with routing and forms
+- [ ] Test and optimize applications
+- [ ] Create a production build
+- [ ] Deploy an Angular application
+
+*This roadmap is a work in progress. I'll keep updating it as I learn new concepts and complete projects.*
+
+## ⌨️ Useful Angular CLI Commands
+
+| Command | Purpose |
+|---|---|
+| `ng new my-app` | Create a new Angular application |
+| `ng serve` | Start the development server |
+| `ng serve --open` | Start the server and open the browser |
+| `ng generate component my-component` | Generate a component |
+| `ng generate service my-service` | Generate a service |
+| `ng generate directive my-directive` | Generate a directive |
+| `ng generate pipe my-pipe` | Generate a pipe |
+| `ng build` | Build the application |
+| `ng test` | Run configured tests |
+| `ng version` | Display Angular and CLI versions |
+| `ng help` | Display available CLI commands |
+
+**Tip:** You can also use the shorter `ng g` alias for `ng generate`, such as `ng g c my-component` to generate a component.
 
 ## 🎯 Goals
 
 - Build a strong foundation in Angular.
-- Learn Angular concepts through practical examples.
-- Develop projects to solve real-world problems.
-- Practice clean, reusable, and maintainable code.
-- Track my progress and continuously improve my skills.
-
-## 🌱 Learning Journey
-
-This repository is continuously updated as I explore new Angular concepts, complete tutorials, and build more projects.
-
-## 🤝 Contributions
-
-Suggestions, feedback, and ideas for improvement are always welcome! Feel free to open an issue or submit a pull request.
-
-## 📄 License
-
-This repository is intended for learning and educational purposes. Unless otherwise specified, all rights are reserved by the repository owner.
+- Understand concepts through hands-on practice.
+- Create useful and practical projects.
+- Write clean, reusable, and maintainable code.
+- Keep track of my progress and share what I learn.
 
 ---
 
-**Happy Coding! 💻✨**
+Thanks for visiting my repository! If you're learning Angular too, I hope you find something useful here.
 
-*Learning Angular, one component at a time.*
+**Happy coding! 💻✨**
